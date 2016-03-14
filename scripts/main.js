@@ -43,12 +43,12 @@
    if (!userInput) {
      if (submitBtnEl.value === "Start") {
        number = generateNumber();
-       submitBtnEl.value = "Submit"
+       submitBtnEl.value = "Submit";
      }
-     msgDisplayEl.innerHTML = "Please guess a number between 1 and 10"
+     msgDisplayEl.innerHTML = "Please guess a number between 1 and 10";
    } else if (userInput === number) {
-     msgDisplayEl.innerHTML = "You guessed it! Great job!"
+     msgDisplayEl.innerHTML = "You guessed it! Great job!";
      clearInput();
-     submitBtnEl.value = "Play Again"
+     submitBtnEl.value = "Play Again";
    } 
  }

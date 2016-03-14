@@ -16,10 +16,11 @@
  // =============================================================================
  
  function generateNumber() {
-   var rNumber = Math.floor(Math.random() * 10);
+   var rNumber = Math.floor(Math.random() * 100);
    console.log(rNumber);
+   return rNumber;
+   var number = rNumber;
 };
- //var number = generateNumber();
 
  function clearInput() {
    userInputEl.value = '';
@@ -45,10 +46,17 @@
        number = generateNumber();
        submitBtnEl.value = "Submit";
      }
-     msgDisplayEl.innerHTML = "Please guess a number between 1 and 10";
-   } else if (userInput === number) {
+     msgDisplayEl.innerHTML = "Please guess a number between 1 and 100";
+   } else if (userInput == number) {
      msgDisplayEl.innerHTML = "You guessed it! Great job!";
      clearInput();
-     submitBtnEl.value = "Play Again";
-   } 
+     submitBtnEl.value = "Play Again"; 
  }
+}
+
+
+
+
+
+
+
